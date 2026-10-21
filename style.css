@@ -72,7 +72,7 @@
 .fig--p1 { position: absolute; right: 2%; bottom: 0; width: min(28%, 170px); animation: none; }
 .head--fig { position: relative; }
 .fig--p6 { position: absolute; right: 0; top: -0.9em; width: auto; height: calc(var(--fs-head) * 2.5 + 1.4em); }
-.fig--p8 { width: clamp(3.8em, calc(18dvh - 96px), 6.4em); margin-top: -0.6em; animation: none; }
+.fig--p8 { width: clamp(6.4em, calc(22dvh - 40px), 9em); margin-top: -0.6em; animation: none; }
 .fig--mind { width: 100%; height: 100%; object-fit: cover; animation: none; }
 .fig--mind { object-position: 50% 6%; }
 
@@ -83,6 +83,8 @@
 .cd2--plain { padding: 0.9em 0.5em; }
 
 .obj { position: absolute; left: var(--x); top: var(--y); width: var(--s); height: var(--s); overflow: visible; animation: sway 3.2s ease-in-out infinite alternate; animation-delay: var(--d); }
+
+.lb { position: absolute; left: var(--x); top: var(--y); width: var(--w); aspect-ratio: 1; translate: -50% -50%; animation: gnd var(--blob-t) ease-in-out infinite alternate; animation-delay: var(--d); }
 .obj--ink { color: var(--color-ink); }
 .obj--yellow { color: var(--color-accent); }
 .obj--white { color: var(--color-base); }
@@ -144,7 +146,7 @@
 .icons__c .ico { width: calc(var(--ic) * 0.56); height: calc(var(--ic) * 0.56); }
 .info__row { display: grid; grid-template-columns: 7.5em 1fr; gap: 0.6em; align-items: start; }
 .info dt { font-weight: 700; color: var(--color-ink); white-space: nowrap; }
-.page--long .lab { margin-bottom: var(--sp-1); }
+.page--long .lab { position: relative; z-index: 2; align-self: flex-start; margin-bottom: var(--sp-1); }
 .page--long .cd { margin-bottom: var(--sp-g); }
 .req__row dt { color: var(--color-ink); }
 .field__opt { font-size: var(--fs-min); color: var(--color-ink-soft); }
