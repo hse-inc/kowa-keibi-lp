@@ -1,0 +1,64 @@
+:root {
+  
+  --color-ink: #0A243F;          
+  --color-main: #0A243F;
+  --color-main-2: #0A243F;       
+  --color-accent: #ffd500;       
+  --color-accent-2: #ffd500;
+  --color-base: #ffffff;         
+  --color-pale: #E9F4FE;         
+  --color-line: #E9F4FE;         
+  --color-on-dark: #ffffff;      
+  --color-on-dark-line: rgb(255 255 255 / 0.6);
+  --color-error: #0A243F;        
+  --color-shadow: rgb(10 36 63 / 0.12);
+  --color-ink-soft: rgb(10 36 63 / 0.72);   
+  --color-pale-2: rgb(233 244 254 / 0.6);   
+  --color-white-70: rgb(255 255 255 / 0.7);
+
+  
+  --bg-dark: var(--color-ink);
+  --bg-accent: var(--color-accent);
+
+  
+  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;   
+  --font-head: "Yusei Magic", "Zen Kaku Gothic New", sans-serif;   
+  --font-en: "Montserrat", "Zen Kaku Gothic New", sans-serif;      
+  --fs-min: 13px;
+  --fs-base: clamp(var(--fs-min), min(2.26dvh, 3.85vw), 15px);
+  --fs-ui: max(var(--fs-min), 13px);
+  --fs-input: 16px;
+  --fw-body: 500;
+  --ls-body: 0.02em;
+  --lh-body: 1.9;                
+  --lh-head: 1.25;
+  --fs-head: min(2.2em, 4.6dvh);              
+  --fs-no: 2.6em;                
+
+  
+  --col: 480px;
+  --header-h: 56px;
+  --gutter: 22px;
+  --sp-1: 0.45em;
+  --sp-p: 0.75em;
+  --sp-g: 1.1em;
+  --pad-y: 1.2em;
+  --next-h: 0px;
+  --radius-pill: 999px;
+  --radius-s: 12px;
+  --radius-card: 24px;
+  --radius-big: 32px;
+  --shadow-soft: 0 0 10px 0 var(--color-shadow);
+  --shadow-column: 0 0 24px 0 var(--color-shadow);
+
+  
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --rise: 20px;
+  --dur-in: 500ms;
+  --dur-hover: 250ms;
+  --blob-t: 14s;                 
+  --float-t: 3.6s;
+  --float-y: 6px;
+}
+@media (max-height: 600px) { :root { --pad-y: 0.7em; } }
