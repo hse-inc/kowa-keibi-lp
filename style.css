@@ -25,13 +25,17 @@
 .lab--center { justify-self: center; }
 
 .ttl--hand { position: relative; z-index: 2; font-family: var(--font-head); font-weight: 400; font-size: var(--fs-head); line-height: var(--lh-head); letter-spacing: 0.01em; color: var(--color-ink); rotate: -4deg; margin-bottom: 0.4em; }
-
-.ttl-em { padding: 0 0.22em 0.22em; background: var(--color-accent); border-radius: 10px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-.page--yellow .ttl-em, .big .ttl-em { color: var(--color-accent); background: var(--color-ink); }
-.page--ink .ttl-em { color: var(--color-ink); }
 .ttl--on-dark { color: var(--color-on-dark); }
 .ttl--center { text-align: center; }
 
+.ttl--img { rotate: 0deg; margin-bottom: 0; }   
+.ttl__img { display: block; width: min(74%, 13em); height: auto; font-size: var(--fs-base); }   
+.ttl--center .ttl__img { margin-inline: auto; }
+.ttl--kv .ttl__img { width: min(80%, 15em); }
+.head--fig .ttl__img { width: min(66%, 12.5em); }
+.ttl--talk .ttl__img { width: 100%; }
+.big .ttl__img { width: min(80%, 12.5em); }
+.ttl--img .say { position: absolute; right: 0; bottom: 0.2em; margin-left: 0; }
 .ttl--kv { margin-bottom: 0.6em; font-size: calc(var(--fs-head) * 1.12); transform-origin: 100% 0; }
 .say { position: relative; display: inline-block; margin-left: 0.5em; padding: 0.35em 0.9em; font-family: var(--font-en); font-weight: 800; font-size: var(--fs-ui); line-height: 1.2; letter-spacing: 0.02em; color: var(--color-ink); vertical-align: 0.3em; background: var(--color-base); border-radius: var(--radius-pill); white-space: nowrap; }
 .say::after { content: ""; position: absolute; left: 1.2em; bottom: -6px; width: 10px; height: 8px; background: var(--color-base); clip-path: polygon(0 0, 100% 0, 30% 100%); }
