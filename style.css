@@ -29,12 +29,14 @@
 .ttl--center { text-align: center; }
 
 .ttl--img { rotate: 0deg; margin-bottom: 0; }   
-.ttl__img { display: block; width: min(74%, 13em); height: auto; font-size: var(--fs-base); }   
+.ttl__img { display: block; width: auto; height: auto; max-width: min(92%, 18em); max-height: 25dvh; font-size: var(--fs-base); }   
 .ttl--center .ttl__img { margin-inline: auto; }
-.ttl--kv .ttl__img { width: min(80%, 15em); }
-.head--fig .ttl__img { width: min(66%, 12.5em); }
-.ttl--talk .ttl__img { width: 100%; }
-.big .ttl__img { width: min(80%, 12.5em); }
+.ttl--kv .ttl__img { max-width: min(92%, 20em); max-height: 28dvh; }
+.ttl--dense .ttl__img { max-height: 19dvh; }      
+.ttl--denser .ttl__img { max-height: 15.5dvh; }  
+.head--fig .ttl__img { max-width: min(70%, 16em); }
+.ttl--talk .ttl__img { width: 100%; max-width: none; max-height: none; }
+.big .ttl__img { width: min(80%, 12.5em); max-height: none; }
 .ttl--kv { margin-bottom: 0.6em; font-size: calc(var(--fs-head) * 1.12); transform-origin: 100% 0; }
 .say { position: relative; display: inline-block; margin-left: 0.5em; padding: 0.35em 0.9em; font-family: var(--font-en); font-weight: 800; font-size: var(--fs-ui); line-height: 1.2; letter-spacing: 0.02em; color: var(--color-ink); vertical-align: 0.3em; background: var(--color-base); border-radius: var(--radius-pill); white-space: nowrap; }
 .say::after { content: ""; position: absolute; left: 1.2em; bottom: -6px; width: 10px; height: 8px; background: var(--color-base); clip-path: polygon(0 0, 100% 0, 30% 100%); }
@@ -162,6 +164,9 @@
   .rail-side .btn--fill { color: var(--color-ink); }
   :root { --col: clamp(480px, 57.5dvh, 600px); }
   .page { --fs-base: clamp(15px, 2.1dvh, 21.5px); --sp-g: clamp(1.15em, 3dvh, 2.4em); }
+  .ttl__img, .ttl--dense .ttl__img, .ttl--denser .ttl__img { max-width: min(92%, 21em); max-height: 28dvh; }   
+  .ttl--kv .ttl__img { max-width: min(92%, 22em); max-height: 32dvh; }
+  .head--fig .ttl__img { max-width: min(72%, 18em); }
   .rail { overflow: hidden; }
   .rail-blob { position: absolute; width: 70%; aspect-ratio: 1; animation: gnd var(--blob-t) ease-in-out infinite alternate; }
   .rail-blob--1 { left: -30%; top: -20%; fill: var(--color-accent); }
