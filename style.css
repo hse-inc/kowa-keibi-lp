@@ -62,7 +62,7 @@
 .mind__lab { display: grid; gap: 0.2em; }
 .mind__en { font-family: var(--font-en); font-weight: 800; font-size: var(--fs-ui); letter-spacing: 0.04em; }
 .mind__tag { font-family: var(--font-head); font-size: 1.9em; line-height: 1.1; }
-.mind__art { flex: 0 0 auto; width: 54%; height: clamp(58px, calc(34dvh - 160px), 220px); overflow: hidden; background: var(--color-pale); border-radius: var(--radius-card); }
+.mind__art { flex: 0 0 auto; width: 54%; height: clamp(58px, calc(34dvh - 160px), 220px); padding: 0.4em 0.4em 0; overflow: hidden; background: var(--color-pale); border-radius: var(--radius-card); }
 
 .mem { position: relative; z-index: 2; display: grid; gap: var(--sp-1); padding: 0.8em 8px 0.7em; color: var(--color-ink); background: var(--color-accent); border-radius: var(--radius-big); }
 .mem > .body { padding: 0 0.5em; }
@@ -83,7 +83,7 @@
 .fig--p6 { position: absolute; right: 0; top: -0.9em; width: auto; height: calc(var(--fs-head) * 2.5 + 1.4em); }
 .fig--p8 { width: clamp(6.4em, calc(22dvh - 40px), 9em); margin-top: -0.6em; animation: none; }
 .fig--mind { width: 100%; height: 100%; object-fit: cover; animation: none; }
-.fig--mind { object-position: 50% 6%; }
+.fig--mind { object-position: 50% 0; }   
 
 .talk { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 36%; align-items: end; gap: 0.3em; }
 .ttl--talk { padding: 0.45em 0.6em; background: var(--color-base); border-radius: var(--radius-card); }
