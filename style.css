@@ -33,7 +33,7 @@
 .ttl--center .ttl__img { margin-inline: auto; }
 .ttl--kv .ttl__img { max-width: min(92%, 20em); max-height: 28dvh; }
 .ttl--dense .ttl__img { max-height: 19dvh; }      
-.ttl--denser .ttl__img { max-height: 15.5dvh; }  
+.ttl--denser .ttl__img { max-height: 12.5dvh; }  
 .head--fig .ttl__img { max-width: min(70%, 16em); }
 .ttl--talk .ttl__img { width: 100%; max-width: none; max-height: none; }
 .big .ttl__img { width: min(80%, 12.5em); max-height: none; }
@@ -62,7 +62,7 @@
 .mind__lab { display: grid; gap: 0.2em; }
 .mind__en { font-family: var(--font-en); font-weight: 800; font-size: var(--fs-ui); letter-spacing: 0.04em; }
 .mind__tag { font-family: var(--font-head); font-size: 1.9em; line-height: 1.1; }
-.mind__art { flex: 0 0 auto; width: 54%; height: clamp(72px, calc(34dvh - 152px), 220px); overflow: hidden; background: var(--color-pale); border-radius: var(--radius-card); }
+.mind__art { flex: 0 0 auto; width: 54%; height: clamp(58px, calc(34dvh - 160px), 220px); overflow: hidden; background: var(--color-pale); border-radius: var(--radius-card); }
 
 .mem { position: relative; z-index: 2; display: grid; gap: var(--sp-1); padding: 0.8em 8px 0.7em; color: var(--color-ink); background: var(--color-accent); border-radius: var(--radius-big); }
 .mem > .body { padding: 0 0.5em; }
