@@ -1,7 +1,7 @@
 .page--pale { background: var(--color-pale); }
 .page--white { background: var(--color-base); }
 .page--yellow { background: var(--color-accent); }
-.page--ink { background: var(--color-ink); }
+.page--ink { --sp-g: 0.75em; background: var(--color-ink); }   
 .bgd { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
 
 .gnd { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -61,7 +61,7 @@
 .mind__top { display: flex; justify-content: space-between; align-items: center; gap: 0.8em; }
 .mind__lab { display: grid; gap: 0.2em; }
 .mind__en { font-family: var(--font-en); font-weight: 800; font-size: var(--fs-ui); letter-spacing: 0.04em; }
-.mind__tag { font-family: var(--font-head); font-size: 1.9em; line-height: 1.1; }
+.mind__tag { font-family: var(--font-head); font-size: 1.45em; line-height: 1.1; white-space: nowrap; }   
 .mind__art { flex: 0 0 auto; width: 54%; height: clamp(58px, calc(34dvh - 160px), 220px); padding: 0.4em 0.4em 0; overflow: hidden; background: var(--color-pale); border-radius: var(--radius-card); }
 
 .mem { position: relative; z-index: 2; display: grid; gap: var(--sp-1); padding: 0.8em 8px 0.7em; color: var(--color-ink); background: var(--color-accent); border-radius: var(--radius-big); }
@@ -100,6 +100,7 @@
 .obj--pale { color: var(--color-pale); }
 @keyframes sway { from { translate: 0 -5px; rotate: -14deg; } to { translate: 0 5px; rotate: 14deg; } }
 .fig--ring { width: 5.6em; }
+.ring--2 .fig--ring { width: 72%; }   
 
 .ico { width: var(--s, 48px); height: var(--s, 48px); overflow: visible; color: var(--color-ink); animation: float var(--float-t) ease-in-out infinite alternate; }
 .f-y { fill: var(--color-accent); }
@@ -164,6 +165,7 @@
   .rail-side .btn--fill { color: var(--color-ink); }
   :root { --col: clamp(480px, 57.5dvh, 600px); }
   .page { --fs-base: clamp(15px, 2.1dvh, 21.5px); --sp-g: clamp(1.15em, 3dvh, 2.4em); }
+  .page--ink { --sp-g: clamp(0.75em, 1.5dvh, 1.2em); }
   .ttl__img, .ttl--dense .ttl__img, .ttl--denser .ttl__img { max-width: min(92%, 21em); max-height: 28dvh; }   
   .ttl--kv .ttl__img { max-width: min(92%, 22em); max-height: 32dvh; }
   .head--fig .ttl__img { max-width: min(72%, 18em); }
